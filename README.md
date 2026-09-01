@@ -29,6 +29,8 @@ credits to start, no card required.
 
 Agent-assisted setup: see [llms-install.md](llms-install.md).
 
+Grok Build users: the plugin lives in [`grok/`](grok/).
+
 ## Tools
 
 | Tool | What it does | Cost |
