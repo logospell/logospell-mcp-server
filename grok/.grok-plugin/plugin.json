@@ -1,7 +1,7 @@
 {
   "name": "logospell",
-  "version": "3.0.0",
-  "description": "AI image generation for your agent: cohesive image sets, transparent-background sets, and single illustrations from the Logospell MCP server.",
+  "version": "3.0.1",
+  "description": "AI image generation for your agent: cohesive image sets, transparent-background sets, and single illustrations. Sets can be changed or exported as platform icons for free.",
   "author": { "name": "Logospell", "url": "https://logospell.com" },
   "homepage": "https://logospell.com",
   "license": "MIT",
