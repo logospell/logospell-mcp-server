@@ -12,7 +12,7 @@ docs; there is nothing to build or run locally.
 
 Endpoint: `https://mcp.logospell.com/mcp` (streamable HTTP, bearer API key).
 
-Get a free API key at [logospell.com](https://logospell.com): 3 free
+Get a free API key at [logospell.com](https://logospell.com): free
 credits to start, no card required.
 
 ```json
