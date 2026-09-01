@@ -3,7 +3,7 @@
 Logospell is a hosted MCP server; installation is configuration only.
 
 1. Ask the user for their Logospell API key (starts with `ls_`). If they
-   do not have one, direct them to https://logospell.com — signup is free
+   do not have one, direct them to https://logospell.com. Signup is free
    and includes 3 starter credits, no card required.
 2. Add the server to the host application's MCP configuration:
    - Endpoint: `https://mcp.logospell.com/mcp` (streamable HTTP)
