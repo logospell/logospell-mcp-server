@@ -1,0 +1,20 @@
+{
+  "name": "logospell",
+  "version": "5.0.1",
+  "description": "AI image generation for your agent: cohesive image sets, transparent-background sets, and single illustrations. Sets can be resized, re-framed, or exported as platform icons.",
+  "settings": [
+    {
+      "name": "Logospell API key",
+      "description": "Your Logospell API key. Get a free key at https://logospell.com; free starter credits, no card required.",
+      "envVar": "LOGOSPELL_API_KEY",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "logospell": {
+      "type": "http",
+      "url": "https://mcp.logospell.com/mcp",
+      "headers": { "Authorization": "Bearer ${LOGOSPELL_API_KEY}" }
+    }
+  }
+}
