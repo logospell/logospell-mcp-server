@@ -13,6 +13,7 @@
   "license": "MIT",
   "icon": "./assets/logo.png",
   "privacyPolicyUrl": "https://logospell.com/privacy",
+  "termsOfServiceUrl": "https://logospell.com/terms",
   "keywords": [
     "logospell",
     "image generation",
