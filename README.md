@@ -175,6 +175,15 @@ balance shared by your MCP calls and the logospell.com generate page.
 
 <br>
 
+### `buy_credits` · no charge to call
+
+Get a Stripe Checkout link that buys 1 to 10 credit packs (`packs`,
+default 1) for the account your API key belongs to, with no sign-in.
+Open it, or hand it to your user, to pay with a card or Link; the
+credits land on the key within seconds of payment.
+
+<br>
+
 ### `list_recent_generations` · free
 
 List your recent generations, a page at a time, and get their download
