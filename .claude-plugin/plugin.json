@@ -11,6 +11,8 @@
   "homepage": "https://logospell.com",
   "repository": "https://github.com/logospell/logospell-mcp-server",
   "license": "MIT",
+  "icon": "./assets/logo.png",
+  "privacyPolicyUrl": "https://logospell.com/privacy",
   "keywords": [
     "logospell",
     "image generation",
