@@ -2,6 +2,11 @@
   <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets in one cohesive style" width="800">
 </p>
 
+Each game, site and app in this reel got its art from Logospell,
+requested by the AI agent that built it. Unmute for sound.
+
+https://github.com/user-attachments/assets/2102a278-621e-40cf-a2e2-73c48ff9103d
+
 # Setup
 
 1. Sign up at [logospell.com](https://logospell.com): free starter
