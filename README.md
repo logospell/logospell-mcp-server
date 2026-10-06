@@ -2,10 +2,11 @@
   <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets in one cohesive style" width="800">
 </p>
 
-Each game, site and app in this reel got its art from Logospell,
-requested by the AI agent that built it.
+A travel-agency site, built by an AI agent from one prompt, twice: once
+with a paragraph handing the hero, nav icons and posters to Logospell
+over MCP, once without.
 
-https://github.com/user-attachments/assets/2102a278-621e-40cf-a2e2-73c48ff9103d
+https://github.com/user-attachments/assets/82fc9f89-3830-41b9-8172-1a1b0731b914
 
 # Setup
 
