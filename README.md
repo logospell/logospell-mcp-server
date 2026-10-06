@@ -195,7 +195,7 @@ appear here too.
 
 ### `get_generations` · free
 
-Get the full record of generations whose ids you have: download link and expiry, delivery settings, style references, and the original call with its style and subjects, so a set can be extended or reproduced. Takes a `generations` list of ids.
+Get the full record of generations whose ids you have: download link and expiry, current delivery settings, style references, and the prompt.json whose style and subjects are the original call's, so a set can be extended or reproduced. Takes a `generations` list of ids.
 
 <br>
 
@@ -226,7 +226,7 @@ Permanently delete one or more references you created with [`create_reference`](
 # Network and credentials
 
 Logospell's plugins talk only to `mcp.logospell.com`: the MCP endpoint
-(`https://mcp.logospell.com/mcp`) plus the short-lived download URLs
+(`https://mcp.logospell.com/mcp`) plus the time-limited download URLs
 its results return on the same host. They authenticate with your
 `LOGOSPELL_API_KEY` as a bearer token, sent only there. No third-party
 endpoints, no client-side telemetry; service calls are recorded

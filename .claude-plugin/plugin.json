@@ -1,7 +1,7 @@
 {
   "name": "logospell",
   "displayName": "Logospell",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "AI image generation for your agent: cohesive image sets, transparent-background sets, and single illustrations. Sets can be resized, re-framed, or exported as platform icons.",
   "author": {
     "name": "Logospell",
