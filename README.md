@@ -155,10 +155,14 @@ One composed picture, such as a scene, hero image, banner or portrait, in a wide
 ### `create_reference` · free
 
 Create an upload slot for a style reference image: you get back a
-ref_ token and a one-line curl upload command. Both set tools accept
-up to 3 tokens via styleReferences; alone or alongside the style
-text, the references define the style by example, the tightest way
-to extend an existing set in its original look.
+ref_ token and a one-line curl upload command. To extend one of your
+own recent sets, skip the upload: pass `sourceGeneration` and
+`sourceImage` and the server copies that image in, and the batch you
+make with it joins that set and restarts its download window. Both
+set tools accept up to 3 tokens via styleReferences; alone or
+alongside the style text, the references define the style by
+example, the tightest way to extend an existing set in its original
+look.
 
 <br>
 
@@ -201,7 +205,7 @@ Get the full record of generations whose ids you have: download link and expiry,
 
 ### `edit_image_set` · free
 
-Change how an existing image set is delivered without generating again: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format` and `quality`, and for a transparent set `background` (a `#RRGGBB` color to compose over, or `"transparent"`). Takes the set's `generation` id; a lever left out keeps its current value. The set's download is replaced in place, so the same URL serves the new delivery. Style, subjects and references cannot be edited.
+Change how an existing image set is delivered without generating again: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format` and `quality`, and for a transparent set `background` (a `#RRGGBB` color to compose over, or `"transparent"`), or `reset` to return to the set as it was first delivered. Takes the set's `generation` id; a lever left out keeps its current value. The set's download is replaced in place, so the same URL serves the new delivery. Style, subjects and references cannot be edited.
 
 <br>
 
