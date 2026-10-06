@@ -2,9 +2,8 @@
   <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets in one cohesive style" width="800">
 </p>
 
-A travel-agency site, built by an AI agent from one prompt, twice: once
-with a paragraph handing the hero, nav icons and posters to Logospell
-over MCP, once without.
+The difference is the art: the same one-prompt travel site, built by
+an AI agent with Logospell and without.
 
 https://github.com/user-attachments/assets/82fc9f89-3830-41b9-8172-1a1b0731b914
 
