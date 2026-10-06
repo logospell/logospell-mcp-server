@@ -3,7 +3,7 @@
 </p>
 
 Each game, site and app in this reel got its art from Logospell,
-requested by the AI agent that built it. Unmute for sound.
+requested by the AI agent that built it.
 
 https://github.com/user-attachments/assets/2102a278-621e-40cf-a2e2-73c48ff9103d
 
