@@ -2,8 +2,8 @@
   <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets in one cohesive style" width="800">
 </p>
 
-The difference is the art: the same one-prompt travel site, built by
-an AI agent with Logospell and without.
+An AI agent built this travel site twice from one prompt. Once it drew
+its own art; once Logospell did.
 
 https://github.com/user-attachments/assets/82fc9f89-3830-41b9-8172-1a1b0731b914
 
