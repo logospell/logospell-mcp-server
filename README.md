@@ -5,7 +5,7 @@
 An AI agent built this travel site twice from one prompt. Once it drew
 its own art; once Logospell did.
 
-https://github.com/user-attachments/assets/aaf92c68-2edb-436c-aab1-946dcf37022b
+https://github.com/user-attachments/assets/8b0516e6-f5d0-4cd6-be56-2fda38cbf0c6
 
 # Setup
 
