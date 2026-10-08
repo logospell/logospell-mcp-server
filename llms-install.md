@@ -38,7 +38,8 @@ There is nothing to download, build, or run locally.
    ```
 
    For Cline, the same object in `cline_mcp_settings.json`, with
-   `"type": "streamableHttp"`.
+   `"type": "streamableHttp"` and `"timeout": 600`. Cline cuts off MCP
+   calls after 60 seconds by default, and a generation can take longer.
 
 3. Verify by calling the `check_credits` tool. It costs nothing and
    returns the key's remaining credits.
