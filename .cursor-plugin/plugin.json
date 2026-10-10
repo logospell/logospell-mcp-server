@@ -1,8 +1,8 @@
 {
   "name": "logospell",
   "displayName": "Logospell",
-  "version": "5.1.3",
-  "description": "AI image generation for your agent: cohesive image sets, transparent-background sets, and single illustrations. Sets can be resized, re-framed, or exported as platform icons.",
+  "version": "5.4.1",
+  "description": "AI image generation for your agent: cohesive image sets, character sets, transparent backgrounds, and single illustrations, with reference images. Sets can be extended, resized, re-framed, or exported as platform icons; illustrations can be resized.",
   "author": { "name": "Logospell", "email": "contact@logospell.com" },
   "homepage": "https://logospell.com",
   "repository": "https://github.com/logospell/logospell-mcp-server",

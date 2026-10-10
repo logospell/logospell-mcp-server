@@ -72,7 +72,7 @@ Gemini CLI asks for your API key when it installs the extension.
 
 ### `generate_image_set` · 1 credit
 
-A cohesive set of images on a solid background, such as icons, game assets or UI elements. You set the style (in words, with reference images, or both), the background color, an exact size or native resolution, how each subject fills its frame, the margin, the format and quality, and each file's name. A finished set can be re-cut with [`edit_image_set`](#edit_image_set--free), or exported as web, iOS, Android and Flutter icons with [`export_icons`](#export_icons--free).
+A cohesive set of images on a solid background, such as icons, game assets or UI elements. You set the style (in words, with reference images, or both), the background color, an exact size or native resolution, how each subject fills its frame, the margin, the format and quality, and each file's name. A finished set can be grown with [`extend_image_set`](#extend_image_set--1-credit), re-cut with [`edit_image_set`](#edit_image_set--free), or exported as web, iOS, Android and Flutter icons with [`export_icons`](#export_icons--free).
 
 <table>
   <tr>
@@ -136,9 +136,87 @@ The same kind of set with transparent backgrounds, ready to drop onto any backdr
 
 <br>
 
+### `generate_character_set` · 1 credit
+
+A set of one character, such as a mascot, creature, person or single product, one variation of it per image on a solid background: sticker and reaction packs, mascot poses, a product shown many ways. You describe the character in words (`character`), show it in up to 3 reference images (`characterReferences`, the most faithful way to keep one specific character), or both, and say what it is doing in each image (`variations`). The background, size, sizing, margin, format and quality controls are the image set tools'. A finished set can be grown with [`extend_character_set`](#extend_character_set--1-credit), re-cut with [`edit_image_set`](#edit_image_set--free), or exported as icons with [`export_icons`](#export_icons--free).
+
+<table>
+  <tr>
+    <th colspan="3" align="left">Your agent asks for</th>
+  </tr>
+  <tr>
+    <td colspan="3"><samp><b>character</b></samp><br>A round orange tabby cat mascot with a red bandana, drawn in 1930s rubber-hose cartoon style: pie-cut eyes, white gloves, bendy noodle limbs, thick black ink outlines and flat orange and cream fills<br><br><samp><b>variations</b></samp><ul><li>waving hello with a huge grin</li><li>laughing so hard it doubles over clutching its belly</li><li>a slow-burning silent glare with arms crossed</li><li>sobbing two fountains of tears</li><li>leaping in pure joy with arms flung up</li><li>sipping a steaming mug of coffee with eyes half closed in bliss</li><li>a confident thumbs up and a wink</li><li>asleep curled up in a striped nightcap</li><li>shocked with fur standing on end and jaw dropped</li></ul><samp><b>background</b></samp><br>#BFE0DA<br><br><samp><b>width</b></samp><br>256<br><br><samp><b>height</b></samp><br>256<br><br><samp><b>sizing</b></samp><br>relative<br><br><samp><b>minimumMargin</b></samp><br>10</td>
+  </tr>
+  <tr>
+    <th colspan="3" align="left">Your agent receives</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/waving_hello_with_a_huge_grin.png" alt="waving hello with a huge grin" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/laughing_so_hard_it_doubles_over_clutching_its_belly.png" alt="laughing so hard it doubles over clutching its belly" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/a_slow-burning_silent_glare_with_arms_crossed.png" alt="a slow-burning silent glare with arms crossed" width="256"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/sobbing_two_fountains_of_tears.png" alt="sobbing two fountains of tears" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/leaping_in_pure_joy_with_arms_flung_up.png" alt="leaping in pure joy with arms flung up" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/sipping_a_steaming_mug_of_coffee_with_eyes_half_closed_in_bliss.png" alt="sipping a steaming mug of coffee with eyes half closed in bliss" width="256"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/a_confident_thumbs_up_and_a_wink.png" alt="a confident thumbs up and a wink" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/asleep_curled_up_in_a_striped_nightcap.png" alt="asleep curled up in a striped nightcap" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/shocked_with_fur_standing_on_end_and_jaw_dropped.png" alt="shocked with fur standing on end and jaw dropped" width="256"></td>
+  </tr>
+</table>
+
+<br>
+
+### `generate_transparent_character_set` · 1 credit
+
+The same kind of character set with transparent backgrounds, stickers that drop onto any chat or backdrop, with the same size, sizing and format controls. [`edit_image_set`](#edit_image_set--free) can later lay a finished set onto a background color.
+
+<table>
+  <tr>
+    <th colspan="3" align="left">Your agent asks for</th>
+  </tr>
+  <tr>
+    <td colspan="3"><samp><b>character</b></samp><br>A vintage tin wind-up toy robot: boxy printed-tin body in cherry red and cream, round dome head, a brass wind-up key on its back, riveted seams and little printed dials on its chest, with a glossy painted-tin sheen<br><br><samp><b>variations</b></samp><ul><li>marching forward mid-stride with arms swinging</li><li>waving hello with one clamp hand</li><li>shyly holding a bouquet of daisies</li><li>frazzled and confused with sparks and smoke rising from its head</li><li>dancing a jaunty jig on one foot</li><li>straining to lift a dumbbell overhead</li><li>saluting stiffly at attention</li><li>slumped over and wound down with its key stopped</li><li>cheering with both arms raised and its chest lights flashing</li></ul><samp><b>background</b></samp><br>transparent (always; this tool has no background parameter)<br><br><samp><b>width</b></samp><br>256<br><br><samp><b>height</b></samp><br>256<br><br><samp><b>sizing</b></samp><br>relative<br><br><samp><b>minimumMargin</b></samp><br>10</td>
+  </tr>
+  <tr>
+    <th colspan="3" align="left">Your agent receives</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/marching_forward_mid-stride_with_arms_swinging.png" alt="marching forward mid-stride with arms swinging" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/waving_hello_with_one_clamp_hand.png" alt="waving hello with one clamp hand" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/shyly_holding_a_bouquet_of_daisies.png" alt="shyly holding a bouquet of daisies" width="256"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/frazzled_and_confused_with_sparks_and_smoke_rising_from_its_head.png" alt="frazzled and confused with sparks and smoke rising from its head" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/dancing_a_jaunty_jig_on_one_foot.png" alt="dancing a jaunty jig on one foot" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/straining_to_lift_a_dumbbell_overhead.png" alt="straining to lift a dumbbell overhead" width="256"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/saluting_stiffly_at_attention.png" alt="saluting stiffly at attention" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/slumped_over_and_wound_down_with_its_key_stopped.png" alt="slumped over and wound down with its key stopped" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/cheering_with_both_arms_raised_and_its_chest_lights_flashing.png" alt="cheering with both arms raised and its chest lights flashing" width="256"></td>
+  </tr>
+</table>
+
+<br>
+
+### `extend_image_set` · 1 credit
+
+Add more subjects to a set made with either image set tool, generated exactly as the set was: the same tool, style text and style references, and the background, size, format, quality, margin and sizing of the batch you name, so a set grows past the 16-subject limit of one call without drifting. A set styled by text alone is sent up to 3 images from its first batch, so the new subjects are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
+
+<br>
+
+### `extend_character_set` · 1 credit
+
+Add more variations to a set made with either character set tool, generated exactly as the set was: the same tool, character text and character references, and the background, size, format, quality, margin and sizing of the batch you name, so a set grows past the 16-variation limit of one call. A set made from text alone is sent up to 3 images from its first batch, so the new variations are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
+
+<br>
+
 ### `generate_illustration` · 1 credit
 
-One composed picture, such as a scene, hero image, banner or portrait, in a wide range of aspect ratios, as PNG, JPEG or WebP at the quality you choose. Each ratio's sizes are exact halves of one another, so this 1584x672 picture displays crisply at 792x336.
+One composed picture, such as a scene, hero image, banner or portrait, in a wide range of aspect ratios, as PNG, JPEG or WebP at the quality you choose. Up to 3 reference images (`references`) can supply a style to match, or a character, product or place to include; the prompt says what each is for. Each ratio's sizes are exact halves of one another, so this 1584x672 picture displays crisply at 792x336. A finished illustration can be delivered again at another of its sizes, format or quality with [`edit_illustration`](#edit_illustration--free).
 
 <table>
   <tr>
@@ -159,15 +237,15 @@ One composed picture, such as a scene, hero image, banner or portrait, in a wide
 
 ### `create_reference` · free
 
-Create an upload slot for a style reference image: you get back a
-ref_ token and a one-line curl upload command. To extend one of your
-own recent sets, skip the upload: pass `sourceGeneration` and
-`sourceImage` and the server copies that image in, and the batch you
-make with it joins that set and restarts its download window. Both
-set tools accept up to 3 tokens via styleReferences; alone or
-alongside the style text, the references define the style by
-example, the tightest way to extend an existing set in its original
-look.
+Create an upload slot for a reference image: you get back a ref_
+token and a one-line curl upload command. Pass the token to whichever
+tool takes reference images: `styleReferences` on the image set
+tools, `characterReferences` on the character set tools, `references`
+on `generate_illustration`, up to 3 each. To use an image from one of
+your own recent generations, skip the upload: pass `sourceGeneration`
+and `sourceImage` and the server copies that image in. To grow an
+existing set, use [`extend_image_set`](#extend_image_set--1-credit) or
+[`extend_character_set`](#extend_character_set--1-credit) instead.
 
 <br>
 
@@ -204,19 +282,25 @@ appear here too.
 
 ### `get_generations` · free
 
-Get the full record of generations whose ids you have: download link and expiry, current delivery settings, style references, and the prompt.json whose style and subjects are the original call's, so a set can be extended or reproduced. Takes a `generations` list of ids.
+Get the full record of generations whose ids you have: download link and expiry, current delivery settings, where its reference images came from, and the prompt.json with the original call, so the generation can be extended or reproduced. Takes a `generations` list of ids.
 
 <br>
 
 ### `edit_image_set` · free
 
-Change how an existing image set is delivered without generating again: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format` and `quality`, and for a transparent set `background` (a `#RRGGBB` color to compose over, or `"transparent"`), or `reset` to return to the set as it was first delivered. Takes the set's `generation` id; a lever left out keeps its current value. The set's download is replaced in place, so the same URL serves the new delivery. Style, subjects and references cannot be edited.
+Change how an existing image set or character set is delivered without generating again: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format` and `quality`, and for a transparent set `background` (a `#RRGGBB` color to compose over, or `"transparent"`), or `reset` to return to the set as it was first delivered. Takes the set's `generation` id; a lever left out keeps its current value. The set's download is replaced in place, so the same URL serves the new delivery. Style, subjects and references cannot be edited.
+
+<br>
+
+### `edit_illustration` · free
+
+Change how an existing illustration is delivered without generating again: `width` and `height` together, as one of its own sizes (the size the model made it at, or an exact half, quarter and so on of it, down to 256 pixels on the shorter side), `format` and `quality`, or `reset` to return to the first delivery. Takes the illustration's `generation` id; a setting left out keeps its current value. It is cut from the model's original image, and its download is replaced in place, so the same URL serves the new delivery. The prompt and references cannot be edited.
 
 <br>
 
 ### `export_icons` · free
 
-Export an existing image set as icons for the web, iOS, Android and Flutter at the base size `iconSize` you name (an even number, 16 to 256; it sizes the batch, so every icon is the delivered image scaled and no file exceeds it): every subject at every density each platform needs, laid out as each expects, with a viewer and a ledger that says per tree whether any file has some blur. One batch and one size per call; `format` and `quality` default to the set's current ones.
+Export an existing image set or character set as icons for the web, iOS, Android and Flutter at the base size `iconSize` you name (an even number, 16 to 256; it sizes the batch, so every icon is the delivered image scaled and no file exceeds it): every subject at every density each platform needs, laid out as each expects, with a viewer and a ledger that says per tree whether any file has some blur. One batch and one size per call; `format` and `quality` default to the set's current ones.
 
 <br>
 
