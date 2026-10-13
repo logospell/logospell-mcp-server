@@ -71,7 +71,48 @@ Gemini CLI asks for your API key when it installs the extension.
 
 A cohesive set of separate subjects in one style, such as icons, game assets or UI elements, on one solid background color or transparent (`background: "transparent"`), so each image drops onto any backdrop. You set the style (in words, with up to 3 reference images, or both), up to 16 subjects, the background, an exact size or native resolution, how each subject fills its frame, the margin, the format and quality, and each file's name. A finished set can be grown with [`extend_image_set`](#extend_image_set--1-credit), delivered again with [`edit_set`](#edit_set--free), or exported for the web, iOS, Android and Flutter with [`export_set`](#export_set--free).
 
-**On a solid color**
+**With a transparent background**
+
+<table>
+  <tr>
+    <th colspan="4" align="left">Your agent asks for</th>
+  </tr>
+  <tr>
+    <td colspan="4"><samp><b>style</b></samp><br>Art Nouveau stained glass with dark lead lines and jewel-toned glass panes<br><br><samp><b>subjects</b></samp><ul><li>a peacock</li><li>a dragonfly</li><li>a calla lily</li><li>an iris</li><li>a swan</li><li>a hummingbird</li><li>a monarch butterfly</li><li>a koi fish</li><li>a snail</li><li>a barn owl</li><li>a rose</li><li>a lotus</li><li>a heron</li><li>a fox</li><li>a seahorse</li><li>a pinecone</li></ul><samp><b>background</b></samp><br>transparent</td>
+  </tr>
+  <tr>
+    <th colspan="4" align="left">Your agent receives</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_peacock.png" alt="a peacock" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_dragonfly.png" alt="a dragonfly" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_calla_lily.png" alt="a calla lily" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/an_iris.png" alt="an iris" width="192"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_swan.png" alt="a swan" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_hummingbird.png" alt="a hummingbird" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_monarch_butterfly.png" alt="a monarch butterfly" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_koi_fish.png" alt="a koi fish" width="192"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_snail.png" alt="a snail" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_barn_owl.png" alt="a barn owl" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_rose.png" alt="a rose" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_lotus.png" alt="a lotus" width="192"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_heron.png" alt="a heron" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_fox.png" alt="a fox" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_seahorse.png" alt="a seahorse" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_pinecone.png" alt="a pinecone" width="192"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><sub>Delivered at 557x556, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
+  </tr>
+</table>
+
+**With a solid background color**
 
 <table>
   <tbody>
@@ -122,47 +163,6 @@ A cohesive set of separate subjects in one style, such as icons, game assets or 
     <td colspan="4"><sub>Delivered at 527x524, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
   </tr>
   </tbody>
-</table>
-
-**Transparent**
-
-<table>
-  <tr>
-    <th colspan="4" align="left">Your agent asks for</th>
-  </tr>
-  <tr>
-    <td colspan="4"><samp><b>style</b></samp><br>Art Nouveau stained glass with dark lead lines and jewel-toned glass panes<br><br><samp><b>subjects</b></samp><ul><li>a peacock</li><li>a dragonfly</li><li>a calla lily</li><li>an iris</li><li>a swan</li><li>a hummingbird</li><li>a monarch butterfly</li><li>a koi fish</li><li>a snail</li><li>a barn owl</li><li>a rose</li><li>a lotus</li><li>a heron</li><li>a fox</li><li>a seahorse</li><li>a pinecone</li></ul><samp><b>background</b></samp><br>transparent</td>
-  </tr>
-  <tr>
-    <th colspan="4" align="left">Your agent receives</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_peacock.png" alt="a peacock" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_dragonfly.png" alt="a dragonfly" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_calla_lily.png" alt="a calla lily" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/an_iris.png" alt="an iris" width="192"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_swan.png" alt="a swan" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_hummingbird.png" alt="a hummingbird" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_monarch_butterfly.png" alt="a monarch butterfly" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_koi_fish.png" alt="a koi fish" width="192"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_snail.png" alt="a snail" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_barn_owl.png" alt="a barn owl" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_rose.png" alt="a rose" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_lotus.png" alt="a lotus" width="192"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_heron.png" alt="a heron" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_fox.png" alt="a fox" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_seahorse.png" alt="a seahorse" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_pinecone.png" alt="a pinecone" width="192"></td>
-  </tr>
-  <tr>
-    <td colspan="4"><sub>Delivered at 557x556, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
-  </tr>
 </table>
 
 <br>
