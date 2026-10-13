@@ -164,37 +164,37 @@ A set of one character, such as a mascot, creature, person or single product, on
     <th colspan="4" align="left">Your agent asks for</th>
   </tr>
   <tr>
-    <td colspan="4"><samp><b>character</b></samp><br>a wise old tortoise wearing a small jeweled crown, rendered as Byzantine gold-tessera mosaic fused with Celtic illuminated-manuscript knotwork across its shell<br><br><samp><b>variations</b></samp><ul><li>waving hello with a gentle smile</li><li>laughing so hard it tips onto its back</li><li>reading an unrolled scroll with a skeptical squint</li><li>sleeping with its head tucked halfway into its shell</li><li>dancing on its hind legs overjoyed</li><li>glaring in slow-burning silent fury</li><li>holding up a lantern with wide-eyed curiosity</li><li>weeping big tears of relief</li><li>shrugging mildly baffled</li><li>playing a small lute lost in the music</li><li>jumping back in shock with eyes wide</li><li>shyly offering a single flower</li><li>raising a goblet in a proud toast</li><li>meditating with eyes closed and perfectly calm</li><li>pointing ahead fiercely determined</li><li>hiding its face behind its crown in embarrassment</li></ul><samp><b>background</b></samp><br>#1e2a3a</td>
+    <td colspan="4"><samp><b>character</b></samp><br>a scholarly fennec fox scribe in a hooded robe, rendered as Ottonian illuminated-manuscript painting fused with Scythian gold animal-style metalwork, with gilded spiral ornament on the robe and ears<br><br><samp><b>variations</b></samp><ul><li>writing with a quill in rapt concentration</li><li>unrolling a long scroll with delight</li><li>yawning hugely with ears drooping</li><li>holding a candle aloft</li><li>bowing politely with paws together</li><li>laughing with eyes squeezed shut</li><li>frowning at a blotted page in mild despair</li><li>sniffing a flower with eyes closed</li><li>juggling three ink pots nervously</li><li>sleeping curled around a stack of books</li><li>pointing at a star map in excitement</li><li>carrying a heavy tome with a grunt</li><li>peeking out from behind a lectern shyly</li><li>raising a goblet in triumph</li><li>startled with fur standing on end</li><li>playing a small harp serenely</li></ul><samp><b>background</b></samp><br>transparent</td>
   </tr>
   <tr>
     <th colspan="4" align="left">Your agent receives</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/waving_hello_with_a_gentle_smile.png" alt="waving hello with a gentle smile" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/laughing_so_hard_it_tips_onto_its_back.png" alt="laughing so hard it tips onto its back" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/reading_an_unrolled_scroll_with_a_skeptical_squint.png" alt="reading an unrolled scroll with a skeptical squint" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/sleeping_with_its_head_tucked_halfway_into_its_shell.png" alt="sleeping with its head tucked halfway into its shell" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/writing_with_a_quill_in_rapt_concentration.png" alt="writing with a quill in rapt concentration" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/unrolling_a_long_scroll_with_delight.png" alt="unrolling a long scroll with delight" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/yawning_hugely_with_ears_drooping.png" alt="yawning hugely with ears drooping" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/holding_a_candle_aloft.png" alt="holding a candle aloft" width="186"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/dancing_on_its_hind_legs_overjoyed.png" alt="dancing on its hind legs overjoyed" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/glaring_in_slow-burning_silent_fury.png" alt="glaring in slow-burning silent fury" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/holding_up_a_lantern_with_wide-eyed_curiosity.png" alt="holding up a lantern with wide-eyed curiosity" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/weeping_big_tears_of_relief.png" alt="weeping big tears of relief" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/bowing_politely_with_paws_together.png" alt="bowing politely with paws together" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/laughing_with_eyes_squeezed_shut.png" alt="laughing with eyes squeezed shut" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/frowning_at_a_blotted_page_in_mild_despair.png" alt="frowning at a blotted page in mild despair" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/sniffing_a_flower_with_eyes_closed.png" alt="sniffing a flower with eyes closed" width="186"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/shrugging_mildly_baffled.png" alt="shrugging mildly baffled" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/playing_a_small_lute_lost_in_the_music.png" alt="playing a small lute lost in the music" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/jumping_back_in_shock_with_eyes_wide.png" alt="jumping back in shock with eyes wide" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/shyly_offering_a_single_flower.png" alt="shyly offering a single flower" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/juggling_three_ink_pots_nervously.png" alt="juggling three ink pots nervously" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/sleeping_curled_around_a_stack_of_books.png" alt="sleeping curled around a stack of books" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/pointing_at_a_star_map_in_excitement.png" alt="pointing at a star map in excitement" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/carrying_a_heavy_tome_with_a_grunt.png" alt="carrying a heavy tome with a grunt" width="186"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/raising_a_goblet_in_a_proud_toast.png" alt="raising a goblet in a proud toast" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/meditating_with_eyes_closed_and_perfectly_calm.png" alt="meditating with eyes closed and perfectly calm" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/pointing_ahead_fiercely_determined.png" alt="pointing ahead fiercely determined" width="192"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/hiding_its_face_behind_its_crown_in_embarrassment.png" alt="hiding its face behind its crown in embarrassment" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/peeking_out_from_behind_a_lectern_shyly.png" alt="peeking out from behind a lectern shyly" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/raising_a_goblet_in_triumph.png" alt="raising a goblet in triumph" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/startled_with_fur_standing_on_end.png" alt="startled with fur standing on end" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/fennec-scribe/playing_a_small_harp_serenely.png" alt="playing a small harp serenely" width="186"></td>
   </tr>
   <tr>
-    <td colspan="4"><sub>Delivered at 576x548, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
+    <td colspan="4"><sub>Delivered at 551x573, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
   </tr>
 </table>
 
