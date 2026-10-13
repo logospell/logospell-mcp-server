@@ -74,42 +74,54 @@ A cohesive set of separate subjects in one style, such as icons, game assets or 
 **On a solid color**
 
 <table>
+  <tbody>
   <tr>
     <th colspan="4" align="left">Your agent asks for</th>
   </tr>
   <tr>
-    <td colspan="4"><samp><b>style</b></samp><br>Persian miniature painting fused with illuminated-manuscript gold leaf and Mughal floral border ornament<br><br><samp><b>subjects</b></samp><ul><li>an astrolabe</li><li>a hunting falcon</li><li>a pomegranate</li><li>a brass lantern</li><li>a lute</li><li>a peacock feather fan</li><li>a camel</li><li>a domed pavilion</li><li>a scimitar</li><li>an hourglass</li><li>a chess knight</li><li>a cypress tree</li><li>a tiger</li><li>an elephant</li><li>a quill and inkwell</li><li>a crescent moon</li></ul><samp><b>background</b></samp><br>#2b1d3a</td>
+    <td colspan="4"><samp><b>style</b></samp><br>Maya stone relief carving fused with Celtic knotwork and gilded Byzantine accents<br><br><samp><b>subjects</b></samp><ul><li>a jaguar</li><li>a quetzal bird</li><li>a feathered serpent</li><li>a sun disk</li><li>a cacao pod</li><li>a ceremonial drum</li><li>a stag</li><li>a round shield</li><li>a harp</li><li>a raven</li><li>a war horn</li><li>a longship</li><li>an oak sprig with acorns</li><li>a hare</li><li>a leaping salmon</li><li>a torc necklace</li></ul><samp><b>background</b></samp><br>#ffffff</td>
   </tr>
   <tr>
     <th colspan="4" align="left">Your agent receives</th>
   </tr>
+  </tbody>
+  <tbody>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/an_astrolabe.png" alt="an astrolabe" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_hunting_falcon.png" alt="a hunting falcon" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_pomegranate.png" alt="a pomegranate" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_brass_lantern.png" alt="a brass lantern" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_jaguar.png" alt="a jaguar" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_quetzal_bird.png" alt="a quetzal bird" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_feathered_serpent.png" alt="a feathered serpent" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_sun_disk.png" alt="a sun disk" width="192"></td>
   </tr>
+  </tbody>
+  <tbody>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_lute.png" alt="a lute" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_peacock_feather_fan.png" alt="a peacock feather fan" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_camel.png" alt="a camel" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_domed_pavilion.png" alt="a domed pavilion" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_cacao_pod.png" alt="a cacao pod" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_ceremonial_drum.png" alt="a ceremonial drum" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_stag.png" alt="a stag" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_round_shield.png" alt="a round shield" width="192"></td>
   </tr>
+  </tbody>
+  <tbody>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_scimitar.png" alt="a scimitar" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/an_hourglass.png" alt="an hourglass" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_chess_knight.png" alt="a chess knight" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_cypress_tree.png" alt="a cypress tree" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_harp.png" alt="a harp" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_raven.png" alt="a raven" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_war_horn.png" alt="a war horn" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_longship.png" alt="a longship" width="192"></td>
   </tr>
+  </tbody>
+  <tbody>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_tiger.png" alt="a tiger" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/an_elephant.png" alt="an elephant" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_quill_and_inkwell.png" alt="a quill and inkwell" width="177"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_crescent_moon.png" alt="a crescent moon" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/an_oak_sprig_with_acorns.png" alt="an oak sprig with acorns" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_hare.png" alt="a hare" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_leaping_salmon.png" alt="a leaping salmon" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/maya-celtic-relief/a_torc_necklace.png" alt="a torc necklace" width="192"></td>
   </tr>
+  </tbody>
+  <tbody>
   <tr>
-    <td colspan="4"><sub>Delivered at 500x540, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
+    <td colspan="4"><sub>Delivered at 527x524, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
   </tr>
+  </tbody>
 </table>
 
 **Transparent**
