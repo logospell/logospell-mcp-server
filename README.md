@@ -70,67 +70,91 @@ Gemini CLI asks for your API key when it installs the extension.
 
 # MCP Tools
 
+## Make a set
+
 ### `generate_image_set` · 1 credit
 
-A cohesive set of images on a solid background, such as icons, game assets or UI elements. You set the style (in words, with reference images, or both), the background color, an exact size or native resolution, how each subject fills its frame, the margin, the format and quality, and each file's name. A finished set can be grown with [`extend_image_set`](#extend_image_set--1-credit), re-cut with [`edit_image_set`](#edit_image_set--free), or exported as web, iOS, Android and Flutter icons with [`export_icons`](#export_icons--free).
+A cohesive set of separate subjects in one style, such as icons, game assets or UI elements, on one solid background color or transparent (`background: "transparent"`), so each image drops onto any backdrop. You set the style (in words, with up to 3 reference images, or both), up to 16 subjects, the background, an exact size or native resolution, how each subject fills its frame, the margin, the format and quality, and each file's name. A finished set can be grown with [`extend_image_set`](#extend_image_set--1-credit), delivered again with [`edit_set`](#edit_set--free), or exported for the web, iOS, Android and Flutter with [`export_set`](#export_set--free).
+
+**On a solid color**
 
 <table>
   <tr>
-    <th colspan="3" align="left">Your agent asks for</th>
+    <th colspan="4" align="left">Your agent asks for</th>
   </tr>
   <tr>
-    <td colspan="3"><samp><b>style</b></samp><br>American traditional tattoo flash: bold black outlines, flat saturated red, green, yellow and blue, simple black shading<br><br><samp><b>subjects</b></samp><ul><li>a swallow in flight</li><li>an anchor wrapped in rope</li><li>a red rose</li><li>a clipper ship under full sail</li><li>a panther head</li><li>a pocket watch</li><li>a lighthouse</li><li>a spread-winged eagle</li><li>a lucky horseshoe</li></ul><samp><b>background</b></samp><br>#E4D0A6<br><br><samp><b>width</b></samp><br>256<br><br><samp><b>height</b></samp><br>256<br><br><samp><b>sizing</b></samp><br>relative<br><br><samp><b>minimumMargin</b></samp><br>10</td>
+    <td colspan="4"><samp><b>style</b></samp><br>Persian miniature painting fused with illuminated-manuscript gold leaf and Mughal floral border ornament<br><br><samp><b>subjects</b></samp><ul><li>an astrolabe</li><li>a hunting falcon</li><li>a pomegranate</li><li>a brass lantern</li><li>a lute</li><li>a peacock feather fan</li><li>a camel</li><li>a domed pavilion</li><li>a scimitar</li><li>an hourglass</li><li>a chess knight</li><li>a cypress tree</li><li>a tiger</li><li>an elephant</li><li>a quill and inkwell</li><li>a crescent moon</li></ul><samp><b>background</b></samp><br>#2b1d3a</td>
   </tr>
   <tr>
-    <th colspan="3" align="left">Your agent receives</th>
+    <th colspan="4" align="left">Your agent receives</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_swallow_in_flight.png" alt="a swallow in flight" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/an_anchor_wrapped_in_rope.png" alt="an anchor wrapped in rope" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_red_rose.png" alt="a red rose" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/an_astrolabe.png" alt="an astrolabe" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_hunting_falcon.png" alt="a hunting falcon" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_pomegranate.png" alt="a pomegranate" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_brass_lantern.png" alt="a brass lantern" width="177"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_clipper_ship_under_full_sail.png" alt="a clipper ship under full sail" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_panther_head.png" alt="a panther head" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_pocket_watch.png" alt="a pocket watch" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_lute.png" alt="a lute" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_peacock_feather_fan.png" alt="a peacock feather fan" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_camel.png" alt="a camel" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_domed_pavilion.png" alt="a domed pavilion" width="177"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_lighthouse.png" alt="a lighthouse" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_spread-winged_eagle.png" alt="a spread-winged eagle" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tattoo-flash/a_lucky_horseshoe.png" alt="a lucky horseshoe" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_scimitar.png" alt="a scimitar" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/an_hourglass.png" alt="an hourglass" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_chess_knight.png" alt="a chess knight" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_cypress_tree.png" alt="a cypress tree" width="177"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_tiger.png" alt="a tiger" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/an_elephant.png" alt="an elephant" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_quill_and_inkwell.png" alt="a quill and inkwell" width="177"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/persian-miniature/a_crescent_moon.png" alt="a crescent moon" width="177"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><sub>Delivered at 500x540, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
   </tr>
 </table>
 
-<br>
-
-### `generate_transparent_image_set` · 1 credit
-
-The same kind of set with transparent backgrounds, ready to drop onto any backdrop, with the same size, sizing and format controls. [`edit_image_set`](#edit_image_set--free) can later lay a finished set onto a background color.
+**Transparent**
 
 <table>
   <tr>
-    <th colspan="3" align="left">Your agent asks for</th>
+    <th colspan="4" align="left">Your agent asks for</th>
   </tr>
   <tr>
-    <td colspan="3"><samp><b>style</b></samp><br>Venetian millefiori glass mosaic: subjects assembled from tightly packed slices of glass cane, each disc bearing its own tiny star, rosette, or concentric ring pattern, in luminous ruby, cobalt, amber, jade, and violet, glassy polished sheen, fine dark seams between the discs<br><br><samp><b>subjects</b></samp><ul><li>a tortoise with a domed shell</li><li>a fox with a sweeping tail</li><li>a koi fish mid-leap</li><li>a dragonfly with double wings</li><li>a toucan with an oversized beak</li><li>a rabbit sitting upright with ears tall</li><li>a cactus in a patterned pot</li><li>a mermaid with a curled tail</li><li>a peacock with its tail fanned</li></ul><samp><b>background</b></samp><br>transparent (always; this tool has no background parameter)<br><br><samp><b>width</b></samp><br>256<br><br><samp><b>height</b></samp><br>256<br><br><samp><b>sizing</b></samp><br>relative<br><br><samp><b>minimumMargin</b></samp><br>10</td>
+    <td colspan="4"><samp><b>style</b></samp><br>Art Nouveau stained glass with dark lead lines and jewel-toned glass panes<br><br><samp><b>subjects</b></samp><ul><li>a peacock</li><li>a dragonfly</li><li>a calla lily</li><li>an iris</li><li>a swan</li><li>a hummingbird</li><li>a monarch butterfly</li><li>a koi fish</li><li>a snail</li><li>a barn owl</li><li>a rose</li><li>a lotus</li><li>a heron</li><li>a fox</li><li>a seahorse</li><li>a pinecone</li></ul><samp><b>background</b></samp><br>transparent</td>
   </tr>
   <tr>
-    <th colspan="3" align="left">Your agent receives</th>
+    <th colspan="4" align="left">Your agent receives</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_tortoise_with_a_domed_shell.png" alt="a tortoise with a domed shell" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_fox_with_a_sweeping_tail.png" alt="a fox with a sweeping tail" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_koi_fish_mid-leap.png" alt="a koi fish mid-leap" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_peacock.png" alt="a peacock" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_dragonfly.png" alt="a dragonfly" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_calla_lily.png" alt="a calla lily" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/an_iris.png" alt="an iris" width="192"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_dragonfly_with_double_wings.png" alt="a dragonfly with double wings" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_toucan_with_an_oversized_beak.png" alt="a toucan with an oversized beak" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_rabbit_sitting_upright_with_ears_tall.png" alt="a rabbit sitting upright with ears tall" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_swan.png" alt="a swan" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_hummingbird.png" alt="a hummingbird" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_monarch_butterfly.png" alt="a monarch butterfly" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_koi_fish.png" alt="a koi fish" width="192"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_cactus_in_a_patterned_pot.png" alt="a cactus in a patterned pot" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_mermaid_with_a_curled_tail.png" alt="a mermaid with a curled tail" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/millefiori-glass/a_peacock_with_its_tail_fanned.png" alt="a peacock with its tail fanned" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_snail.png" alt="a snail" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_barn_owl.png" alt="a barn owl" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_rose.png" alt="a rose" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_lotus.png" alt="a lotus" width="192"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_heron.png" alt="a heron" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_fox.png" alt="a fox" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_seahorse.png" alt="a seahorse" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/stained-glass/a_pinecone.png" alt="a pinecone" width="192"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><sub>Delivered at 557x556, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
   </tr>
 </table>
 
@@ -138,114 +162,126 @@ The same kind of set with transparent backgrounds, ready to drop onto any backdr
 
 ### `generate_character_set` · 1 credit
 
-A set of one character, such as a mascot, creature, person or single product, one variation of it per image on a solid background: sticker and reaction packs, mascot poses, a product shown many ways. You describe the character in words (`character`), show it in up to 3 reference images (`characterReferences`, the most faithful way to keep one specific character), or both, and say what it is doing in each image (`variations`). The background, size, sizing, margin, format and quality controls are the image set tools'. A finished set can be grown with [`extend_character_set`](#extend_character_set--1-credit), re-cut with [`edit_image_set`](#edit_image_set--free), or exported as icons with [`export_icons`](#export_icons--free).
+A set of one character, such as a mascot, creature, person or single product, one variation of it per image: sticker and reaction packs, mascot poses, a product shown many ways. You describe the character in words (`character`), show it in up to 3 reference images (`characterReferences`, the most faithful way to keep one specific character), or both, and say what it is doing in each image (`variations`, up to 16). The background (a color or transparent), size, sizing, margin, format and quality controls are `generate_image_set`'s. A finished set can be grown with [`extend_character_set`](#extend_character_set--1-credit), delivered again with [`edit_set`](#edit_set--free), or exported with [`export_set`](#export_set--free).
+
+<table>
+  <tr>
+    <th colspan="4" align="left">Your agent asks for</th>
+  </tr>
+  <tr>
+    <td colspan="4"><samp><b>character</b></samp><br>a wise old tortoise wearing a small jeweled crown, rendered as Byzantine gold-tessera mosaic fused with Celtic illuminated-manuscript knotwork across its shell<br><br><samp><b>variations</b></samp><ul><li>waving hello with a gentle smile</li><li>laughing so hard it tips onto its back</li><li>reading an unrolled scroll with a skeptical squint</li><li>sleeping with its head tucked halfway into its shell</li><li>dancing on its hind legs overjoyed</li><li>glaring in slow-burning silent fury</li><li>holding up a lantern with wide-eyed curiosity</li><li>weeping big tears of relief</li><li>shrugging mildly baffled</li><li>playing a small lute lost in the music</li><li>jumping back in shock with eyes wide</li><li>shyly offering a single flower</li><li>raising a goblet in a proud toast</li><li>meditating with eyes closed and perfectly calm</li><li>pointing ahead fiercely determined</li><li>hiding its face behind its crown in embarrassment</li></ul><samp><b>background</b></samp><br>#1e2a3a</td>
+  </tr>
+  <tr>
+    <th colspan="4" align="left">Your agent receives</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/waving_hello_with_a_gentle_smile.png" alt="waving hello with a gentle smile" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/laughing_so_hard_it_tips_onto_its_back.png" alt="laughing so hard it tips onto its back" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/reading_an_unrolled_scroll_with_a_skeptical_squint.png" alt="reading an unrolled scroll with a skeptical squint" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/sleeping_with_its_head_tucked_halfway_into_its_shell.png" alt="sleeping with its head tucked halfway into its shell" width="192"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/dancing_on_its_hind_legs_overjoyed.png" alt="dancing on its hind legs overjoyed" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/glaring_in_slow-burning_silent_fury.png" alt="glaring in slow-burning silent fury" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/holding_up_a_lantern_with_wide-eyed_curiosity.png" alt="holding up a lantern with wide-eyed curiosity" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/weeping_big_tears_of_relief.png" alt="weeping big tears of relief" width="192"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/shrugging_mildly_baffled.png" alt="shrugging mildly baffled" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/playing_a_small_lute_lost_in_the_music.png" alt="playing a small lute lost in the music" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/jumping_back_in_shock_with_eyes_wide.png" alt="jumping back in shock with eyes wide" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/shyly_offering_a_single_flower.png" alt="shyly offering a single flower" width="192"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/raising_a_goblet_in_a_proud_toast.png" alt="raising a goblet in a proud toast" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/meditating_with_eyes_closed_and_perfectly_calm.png" alt="meditating with eyes closed and perfectly calm" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/pointing_ahead_fiercely_determined.png" alt="pointing ahead fiercely determined" width="192"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/mosaic-tortoise/hiding_its_face_behind_its_crown_in_embarrassment.png" alt="hiding its face behind its crown in embarrassment" width="192"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><sub>Delivered at 576x548, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
+  </tr>
+</table>
+
+<br>
+
+### `generate_illustration_set` · 1 credit
+
+A set of composed pictures in one style, such as scenes, hero images, banners, posters or portraits, one picture per scene and up to 6 per call. You set the style (in words, with up to 3 reference images, or both), the scenes, the size (every picture in a call shares one, from a fixed list of shapes running from 8:1 to 1:8), and the format and quality. Without style references, the first scene is drawn first and the rest are drawn to match it. A finished set can be grown with [`extend_illustration_set`](#extend_illustration_set--1-credit), at its size or another from the list, delivered again at another of its own sizes with [`edit_set`](#edit_set--free), or exported for apps and sites with [`export_set`](#export_set--free).
 
 <table>
   <tr>
     <th colspan="3" align="left">Your agent asks for</th>
   </tr>
   <tr>
-    <td colspan="3"><samp><b>character</b></samp><br>A round orange tabby cat mascot with a red bandana, drawn in 1930s rubber-hose cartoon style: pie-cut eyes, white gloves, bendy noodle limbs, thick black ink outlines and flat orange and cream fills<br><br><samp><b>variations</b></samp><ul><li>waving hello with a huge grin</li><li>laughing so hard it doubles over clutching its belly</li><li>a slow-burning silent glare with arms crossed</li><li>sobbing two fountains of tears</li><li>leaping in pure joy with arms flung up</li><li>sipping a steaming mug of coffee with eyes half closed in bliss</li><li>a confident thumbs up and a wink</li><li>asleep curled up in a striped nightcap</li><li>shocked with fur standing on end and jaw dropped</li></ul><samp><b>background</b></samp><br>#BFE0DA<br><br><samp><b>width</b></samp><br>256<br><br><samp><b>height</b></samp><br>256<br><br><samp><b>sizing</b></samp><br>relative<br><br><samp><b>minimumMargin</b></samp><br>10</td>
+    <td colspan="3"><samp><b>style</b></samp><br>Byzantine icon painting fused with Persian miniature detail and Celtic illuminated borders, with gold-leaf skies and jewel-toned pigments<br><br><samp><b>scenes</b></samp><ul><li>a pilgrim caravan crossing a desert pass at golden dusk, lanterns swinging from the camels</li><li>a monastery on a sea cliff at dawn with monks ringing bells as gulls circle</li><li>a night market in a domed city under a starry sky, merchants lit by brass lamps</li><li>a scholar reading in a tiled library at noon, sunlight falling through latticed windows</li><li>a royal hunt in a cypress forest at morning, falcons launching from gloved wrists</li><li>a harbor of carved ships at moonrise with a lighthouse burning on the mole</li></ul><samp><b>width</b></samp><br>1696<br><br><samp><b>height</b></samp><br>2528</td>
   </tr>
   <tr>
     <th colspan="3" align="left">Your agent receives</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/waving_hello_with_a_huge_grin.png" alt="waving hello with a huge grin" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/laughing_so_hard_it_doubles_over_clutching_its_belly.png" alt="laughing so hard it doubles over clutching its belly" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/a_slow-burning_silent_glare_with_arms_crossed.png" alt="a slow-burning silent glare with arms crossed" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/byzantine-illuminated/a_pilgrim_caravan_crossing_a_desert_pass_at.webp" alt="a pilgrim caravan crossing a desert pass at golden dusk, lanterns swinging from the camels" width="264"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/byzantine-illuminated/a_monastery_on_a_sea_cliff_at_dawn_with_monks.webp" alt="a monastery on a sea cliff at dawn with monks ringing bells as gulls circle" width="264"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/byzantine-illuminated/a_night_market_in_a_domed_city_under_a_starry.webp" alt="a night market in a domed city under a starry sky, merchants lit by brass lamps" width="264"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/sobbing_two_fountains_of_tears.png" alt="sobbing two fountains of tears" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/leaping_in_pure_joy_with_arms_flung_up.png" alt="leaping in pure joy with arms flung up" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/sipping_a_steaming_mug_of_coffee_with_eyes_half_closed_in_bliss.png" alt="sipping a steaming mug of coffee with eyes half closed in bliss" width="256"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/byzantine-illuminated/a_scholar_reading_in_a_tiled_library_at_noon.webp" alt="a scholar reading in a tiled library at noon, sunlight falling through latticed windows" width="264"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/byzantine-illuminated/a_royal_hunt_in_a_cypress_forest_at_morning.webp" alt="a royal hunt in a cypress forest at morning, falcons launching from gloved wrists" width="264"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/byzantine-illuminated/a_harbor_of_carved_ships_at_moonrise_with_a.webp" alt="a harbor of carved ships at moonrise with a lighthouse burning on the mole" width="264"></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/a_confident_thumbs_up_and_a_wink.png" alt="a confident thumbs up and a wink" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/asleep_curled_up_in_a_striped_nightcap.png" alt="asleep curled up in a striped nightcap" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/rubber-hose-cat/shocked_with_fur_standing_on_end_and_jaw_dropped.png" alt="shocked with fur standing on end and jaw dropped" width="256"></td>
+    <td colspan="3"><sub>Delivered at 1696x2528. Shown here from <code>export_set</code> at base size 394.</sub></td>
   </tr>
 </table>
 
 <br>
 
-### `generate_transparent_character_set` · 1 credit
-
-The same kind of character set with transparent backgrounds, stickers that drop onto any chat or backdrop, with the same size, sizing and format controls. [`edit_image_set`](#edit_image_set--free) can later lay a finished set onto a background color.
-
-<table>
-  <tr>
-    <th colspan="3" align="left">Your agent asks for</th>
-  </tr>
-  <tr>
-    <td colspan="3"><samp><b>character</b></samp><br>A vintage tin wind-up toy robot: boxy printed-tin body in cherry red and cream, round dome head, a brass wind-up key on its back, riveted seams and little printed dials on its chest, with a glossy painted-tin sheen<br><br><samp><b>variations</b></samp><ul><li>marching forward mid-stride with arms swinging</li><li>waving hello with one clamp hand</li><li>shyly holding a bouquet of daisies</li><li>frazzled and confused with sparks and smoke rising from its head</li><li>dancing a jaunty jig on one foot</li><li>straining to lift a dumbbell overhead</li><li>saluting stiffly at attention</li><li>slumped over and wound down with its key stopped</li><li>cheering with both arms raised and its chest lights flashing</li></ul><samp><b>background</b></samp><br>transparent (always; this tool has no background parameter)<br><br><samp><b>width</b></samp><br>256<br><br><samp><b>height</b></samp><br>256<br><br><samp><b>sizing</b></samp><br>relative<br><br><samp><b>minimumMargin</b></samp><br>10</td>
-  </tr>
-  <tr>
-    <th colspan="3" align="left">Your agent receives</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/marching_forward_mid-stride_with_arms_swinging.png" alt="marching forward mid-stride with arms swinging" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/waving_hello_with_one_clamp_hand.png" alt="waving hello with one clamp hand" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/shyly_holding_a_bouquet_of_daisies.png" alt="shyly holding a bouquet of daisies" width="256"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/frazzled_and_confused_with_sparks_and_smoke_rising_from_its_head.png" alt="frazzled and confused with sparks and smoke rising from its head" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/dancing_a_jaunty_jig_on_one_foot.png" alt="dancing a jaunty jig on one foot" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/straining_to_lift_a_dumbbell_overhead.png" alt="straining to lift a dumbbell overhead" width="256"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/saluting_stiffly_at_attention.png" alt="saluting stiffly at attention" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/slumped_over_and_wound_down_with_its_key_stopped.png" alt="slumped over and wound down with its key stopped" width="256"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/tin-robot/cheering_with_both_arms_raised_and_its_chest_lights_flashing.png" alt="cheering with both arms raised and its chest lights flashing" width="256"></td>
-  </tr>
-</table>
-
-<br>
+## Grow a set
 
 ### `extend_image_set` · 1 credit
 
-Add more subjects to a set made with either image set tool, generated exactly as the set was: the same tool, style text and style references, and the background, size, format, quality, margin and sizing of the batch you name, so a set grows past the 16-subject limit of one call without drifting. A set styled by text alone is sent up to 3 images from its first batch, so the new subjects are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
+Add more subjects to a set made with `generate_image_set`, generated exactly as the set was: the same style text and style references, and the background (a color or transparent), size, format, quality, margin and sizing of the batch you name, so a set grows past the 16-subject limit of one call without drifting. A set styled by text alone is sent up to 3 images from its first batch, so the new subjects are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
 
 <br>
 
 ### `extend_character_set` · 1 credit
 
-Add more variations to a set made with either character set tool, generated exactly as the set was: the same tool, character text and character references, and the background, size, format, quality, margin and sizing of the batch you name, so a set grows past the 16-variation limit of one call. A set made from text alone is sent up to 3 images from its first batch, so the new variations are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
+Add more variations to a set made with `generate_character_set`, generated exactly as the set was: the same character text and character references, and the background (a color or transparent), size, format, quality, margin and sizing of the batch you name, so a set grows past the 16-variation limit of one call. A set made from text alone is sent up to 3 images from its first batch, so the new variations are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
 
 <br>
 
-### `generate_illustration` · 1 credit
+### `extend_illustration_set` · 1 credit
 
-One composed picture, such as a scene, hero image, banner or portrait, in a wide range of aspect ratios, as PNG, JPEG or WebP at the quality you choose. Up to 3 reference images (`references`) can supply a style to match, or a character, product or place to include; the prompt says what each is for. Each ratio's sizes are exact halves of one another, so this 1584x672 picture displays crisply at 792x336. A finished illustration can be delivered again at another of its sizes, format or quality with [`edit_illustration`](#edit_illustration--free).
-
-<table>
-  <tr>
-    <th align="left">Your agent asks for</th>
-  </tr>
-  <tr>
-    <td><samp><b>prompt</b></samp><br>A small brass-and-glass airship moored to a clifftop lighthouse at sunset: the keeper waves from the railed gallery, gulls wheel overhead, and warm amber light spills across a calm sea far below. Painterly storybook illustration, rich and detailed, luminous golden-hour palette<br><br><samp><b>width</b></samp><br>1584<br><br><samp><b>height</b></samp><br>672</td>
-  </tr>
-  <tr>
-    <th align="left">Your agent receives</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/airship-lighthouse.webp" alt="a brass-and-glass airship moored to a clifftop lighthouse at sunset" width="792"></td>
-  </tr>
-</table>
+Add more scenes to a set made with `generate_illustration_set`, drawn exactly as the set was: the same style text and style references, and the format and quality of the batch you name, at its size or any other size the tool lists, so one set can hold a wide hero and tall posters. A set made from text alone is sent up to 3 images from its first batch, so the new scenes are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
 
 <br>
+
+## Deliver a set again
+
+### `edit_set` · free
+
+Change how an existing image set, character set or illustration set is delivered, without generating again. On an image or character set: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format` and `quality`, and for a transparent set `background` (a `#RRGGBB` color to compose over, or `"transparent"`). On an illustration set: `width` and `height` together, as one of the batch's own sizes (the size its scenes were drawn at, or an exact half, quarter and so on of it, down to 256 pixels on the shorter side), `format` and `quality`. Or `reset`, to return to the set as it was first delivered. Takes the set's `generation` id; a setting left out keeps its current value. The set is cut again from its full-resolution source and its download is replaced in place, so the same URL serves the new delivery. What the pictures show cannot be edited.
+
+<br>
+
+### `export_set` · free
+
+Export an existing set for the web, iOS, Android and Flutter at the base size `baseSize` you name: every image at every density each platform needs, laid out as each expects, with a viewer and a ledger that says per tree whether any file has some blur. An image or character set exports as icons, at base sizes from 16 to 256; an illustration set exports its scenes whole, up to its `crispBaseSize` (a quarter of the longest side its scenes were drawn at), so it is always crisp. One batch and one size per call; `format` and `quality` default to the set's current ones. Every example image on this page came from it.
+
+<br>
+
+## Reference images
 
 ### `create_reference` · free
 
 Create an upload slot for a reference image: you get back a ref_
 token and a one-line curl upload command. Pass the token to whichever
-tool takes reference images: `styleReferences` on the image set
-tools, `characterReferences` on the character set tools, `references`
-on `generate_illustration`, up to 3 each. To use an image from one of
+tool takes reference images: `styleReferences` on `generate_image_set`
+and `generate_illustration_set`, `characterReferences` on
+`generate_character_set`, up to 3 each. To use an image from one of
 your own recent generations, skip the upload: pass `sourceGeneration`
 and `sourceImage` and the server copies that image in. To grow an
-existing set, use [`extend_image_set`](#extend_image_set--1-credit) or
-[`extend_character_set`](#extend_character_set--1-credit) instead.
+existing set, use its extend tool instead.
 
 <br>
 
@@ -255,21 +291,13 @@ List your live reference images, most recently used or uploaded first, with each
 
 <br>
 
-### `check_credits` · free
+### `delete_references` · free
 
-Check how many image generation credits remain on your account: one
-balance shared by your MCP calls and the logospell.com generate page.
-
-<br>
-
-### `buy_credits` · no charge to call
-
-Get a Stripe Checkout link that buys 1 to 10 credit packs (`packs`,
-default 1) for the account your API key belongs to, with no sign-in.
-Open it, or hand it to your user, to pay with a card or Link; the
-credits land on the key within seconds of payment.
+Permanently delete one or more references you created with [`create_reference`](#create_reference--free), before they expire on their own: pass their tokens in `refs`, and the images are removed and the tokens stop working. Only the API key that created a reference can delete it.
 
 <br>
+
+## Your generations and credits
 
 ### `list_recent_generations` · free
 
@@ -286,33 +314,25 @@ Get the full record of generations whose ids you have: download link and expiry,
 
 <br>
 
-### `edit_image_set` · free
-
-Change how an existing image set or character set is delivered without generating again: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format` and `quality`, and for a transparent set `background` (a `#RRGGBB` color to compose over, or `"transparent"`), or `reset` to return to the set as it was first delivered. Takes the set's `generation` id; a lever left out keeps its current value. The set's download is replaced in place, so the same URL serves the new delivery. Style, subjects and references cannot be edited.
-
-<br>
-
-### `edit_illustration` · free
-
-Change how an existing illustration is delivered without generating again: `width` and `height` together, as one of its own sizes (the size the model made it at, or an exact half, quarter and so on of it, down to 256 pixels on the shorter side), `format` and `quality`, or `reset` to return to the first delivery. Takes the illustration's `generation` id; a setting left out keeps its current value. It is cut from the model's original image, and its download is replaced in place, so the same URL serves the new delivery. The prompt and references cannot be edited.
-
-<br>
-
-### `export_icons` · free
-
-Export an existing image set or character set as icons for the web, iOS, Android and Flutter at the base size `iconSize` you name (an even number, 16 to 256; it sizes the batch, so every icon is the delivered image scaled and no file exceeds it): every subject at every density each platform needs, laid out as each expects, with a viewer and a ledger that says per tree whether any file has some blur. One batch and one size per call; `format` and `quality` default to the set's current ones.
-
-<br>
-
 ### `delete_generations` · free
 
-Permanently delete one or more of your generations before their download window closes: each download URL stops working, and the images and the source kept for edits and icon exports are removed. Takes a `generations` list of ids; pass all of a set's ids to delete the whole set. Only the API key that made a generation can delete it; there is no undo, and credits are not refunded.
+Permanently delete one or more of your generations before their download window closes: each download URL stops working, and the images and the source kept for edits and exports are removed. Takes a `generations` list of ids; pass all of a set's ids to delete the whole set. Only the API key that made a generation can delete it; there is no undo, and credits are not refunded.
 
 <br>
 
-### `delete_references` · free
+### `check_credits` · free
 
-Permanently delete one or more references you created with [`create_reference`](#create_reference--free), before they expire on their own: pass their tokens in `refs`, and the images are removed and the tokens stop working. Only the API key that created a reference can delete it.
+Check how many image generation credits remain on your account: one
+balance shared by your MCP calls and the logospell.com generate page.
+
+<br>
+
+### `buy_credits` · no charge to call
+
+Get a Stripe Checkout link that buys 1 to 10 credit packs (`packs`,
+default 1) for the account your API key belongs to, with no sign-in.
+Open it, or hand it to your user, to pay with a card or Link; the
+credits land on the key within seconds of payment.
 
 <br>
 

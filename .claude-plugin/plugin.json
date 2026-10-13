@@ -1,8 +1,8 @@
 {
   "name": "logospell",
   "displayName": "Logospell",
-  "version": "5.4.1",
-  "description": "AI image generation for your agent: cohesive image sets, character sets, transparent backgrounds, and single illustrations, with reference images. Sets can be extended, resized, re-framed, or exported as platform icons; illustrations can be resized.",
+  "version": "6.0.0",
+  "description": "AI image generation for your agent: cohesive image sets, character sets and illustration sets, with reference images; image and character sets on a solid color or transparent. Every set can be extended, edited, or exported for the web, iOS, Android and Flutter.",
   "author": {
     "name": "Logospell",
     "email": "contact@logospell.com",
@@ -18,8 +18,9 @@
     "logospell",
     "image generation",
     "image sets",
+    "character sets",
+    "illustration sets",
     "transparent images",
-    "illustrations",
     "icons",
     "game assets",
     "mcp"
