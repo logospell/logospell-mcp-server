@@ -214,7 +214,7 @@ A set of one character, such as a mascot, creature, person or single product, on
 
 ### `generate_illustration_set` · 1 credit
 
-A set of composed pictures in one style, such as scenes, hero images, banners, posters or portraits, one picture per scene and up to 6 per call. You set the style (in words, with up to 3 reference images, or both), the scenes, the size (every picture in a call shares one, from a fixed list of shapes running from 8:1 to 1:8), and the format and quality. Without style references, the first scene is drawn first and the rest are drawn to match it. A finished set can be grown with [`extend_illustration_set`](#extend_illustration_set--1-credit), at its size or another from the list, delivered again at another of its own sizes with [`edit_set`](#edit_set--free), or exported for apps and sites with [`export_set`](#export_set--free).
+A set of composed illustrations in one style, such as scenes, hero images, banners, posters or portraits, one illustration per scene and up to 6 per call. You set the style (in words, with up to 3 reference images, or both), the scenes, the size (every illustration in a call shares one, from a fixed list of shapes running from 8:1 to 1:8), and the format and quality. Without style references, the first scene is drawn first and the rest are drawn to match it. A finished set can be grown with [`extend_illustration_set`](#extend_illustration_set--1-credit), at its size or another from the list, delivered again at another of its own sizes with [`edit_set`](#edit_set--free), or exported for apps and sites with [`export_set`](#export_set--free).
 
 <table>
   <tr>
