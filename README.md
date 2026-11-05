@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets in one cohesive style" width="800">
+  <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets made to belong together" width="800">
 </p>
 
 # Setup
@@ -243,6 +243,72 @@ A set of composed illustrations in one style, such as scenes, hero images, banne
 
 <br>
 
+### `generate_concept_set` · 1 credit
+
+A set of different concepts from one brief, each its own idea in its own style, for exploring before choosing: logo ideas for a business, mascot concepts, app icon directions. You write the brief (`brief`: what the concepts are for, with a name, must-haves, things to avoid and a mood; a name in it is lettered into the concepts), and either list the concepts (`concepts`, up to 16, each its own idea in a named style) or leave them out, and the model invents 16 from the brief, each file and caption numbered and named from what it shows. The background (a color or transparent), size, sizing, margin, format, quality and file size limit controls are `generate_image_set`'s. A concept set has no extend tool: call it again for more. A finished set can be delivered again with [`edit_set`](#edit_set--free) or exported with [`export_set`](#export_set--free), and one chosen concept shown many ways with [`generate_logo_variations`](#generate_logo_variations--1-credit).
+
+<table>
+  <tr>
+    <th colspan="4" align="left">Your agent asks for</th>
+  </tr>
+  <tr>
+    <td colspan="4"><samp><b>brief</b></samp><br>Logo ideas for Cactus Corner, a succulent shop. Lifelike plants with real texture and form: saguaro, barrel cactus, echeveria, aloe. Avoid cartoons, faces and novelty props. Earthy, grounded, refined.<br><br><samp><b>concepts</b></samp><br>left out, for the model to invent<br><br><samp><b>background</b></samp><br>#ffffff</td>
+  </tr>
+  <tr>
+    <th colspan="4" align="left">Your agent receives</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_01_saguaro_cactus_cluster_with_rocks.png" alt="saguaro cactus cluster with rocks" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_02_circular_gold-bordered_succulent_arrangement.png" alt="circular gold-bordered succulent arrangement" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_04_cactus_and_agave_on_a_wooden_sign.png" alt="cactus and agave on a wooden sign" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_06_flowering_prickly_pear_cactus_with_dark_green_backgro.png" alt="flowering prickly pear cactus with dark green backgro" width="186"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_07_circular_stamp_with_agave_cactus.png" alt="circular stamp with agave cactus" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_10_saguaro_cacti_silhouette_against_sunset.png" alt="saguaro cacti silhouette against sunset" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_11_round_flowering_cactus_with_circular_text.png" alt="round flowering cactus with circular text" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_14_saguaro_cactus_with_dark_green_text.png" alt="saguaro cactus with dark green text" width="186"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><sub>8 of the 16 concepts. Delivered at 514x549, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
+  </tr>
+</table>
+
+<br>
+
+### `generate_logo_variations` · 1 credit
+
+A set of one logo shown many ways, the logo recognizable in every image: restyled, in materials and finishes, in seasonal versions, or a mascot mark doing different things. You show the logo in 1 to 3 reference images (`logo`), add a brief if something applies to every image (`brief`: a name, initials or a tagline to letter in, must-haves, things to avoid), and either list the variations (`variations`, up to 16: a style, a material, a finish, or what the mark is doing) or leave them out, and the model invents 16 from the logo. With a list, the logo keeps its shape unless the brief or a variation says otherwise; without one, the model varies its design too, keeping the logo's pictured elements and words. The background, size, sizing, margin, format, quality and file size limit controls are `generate_image_set`'s. Logo variations have no extend tool: call it again for more. A finished set can be delivered again with [`edit_set`](#edit_set--free) or exported with [`export_set`](#export_set--free).
+
+<table>
+  <tr>
+    <th colspan="4" align="left">Your agent asks for</th>
+  </tr>
+  <tr>
+    <td colspan="4"><samp><b>logo</b></samp><br><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_04_cactus_and_agave_on_a_wooden_sign.png" alt="cactus and agave on a wooden sign" width="128"><br>the fourth concept above, filled from that set with <code>create_reference</code><br><br><samp><b>brief</b></samp><br>left out<br><br><samp><b>variations</b></samp><br>left out, for the model to invent<br><br><samp><b>background</b></samp><br>#ffffff</td>
+  </tr>
+  <tr>
+    <th colspan="4" align="left">Your agent receives</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_04_logo_on_a_terracotta_pot.png" alt="logo on a terracotta pot" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_06_logo_on_a_heart-shaped_wooden_plaque.png" alt="logo on a heart-shaped wooden plaque" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_07_logo_on_an_arched_sunset_landscape_badge.png" alt="logo on an arched sunset landscape badge" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_08_logo_on_a_cactus-shaped_wooden_sign.png" alt="logo on a cactus-shaped wooden sign" width="186"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_09_logo_on_a_white_ceramic_mug.png" alt="logo on a white ceramic mug" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_11_logo_as_a_neon_sign.png" alt="logo as a neon sign" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_12_logo_on_a_galvanized_metal_bucket.png" alt="logo on a galvanized metal bucket" width="186"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-logos/variation_15_logo_on_an_ornate_hanging_metal_sign.png" alt="logo on an ornate hanging metal sign" width="186"></td>
+  </tr>
+  <tr>
+    <td colspan="4"><sub>8 of the 16 variations. Delivered at 551x545, the set's native size. Shown here from <code>export_set</code> at base size 128.</sub></td>
+  </tr>
+</table>
+
+<br>
+
 ## Grow a set
 
 ### `extend_image_set` · 1 credit
@@ -267,13 +333,13 @@ Add more scenes to a set made with `generate_illustration_set`, drawn exactly as
 
 ### `edit_set` · free
 
-Change how an existing image set, character set or illustration set is delivered, without generating again. On an image or character set: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format`, `quality` and `maxKB` (a file size limit, webp only), and for a character set or a transparent image set `background` (a `#RRGGBB` color to compose over, or `"transparent"`). On an illustration set: `width` and `height` together, as one of the batch's own sizes (the size its scenes were drawn at, or an exact half, quarter and so on of it, down to 256 pixels on the shorter side), `format` and `quality`. Or `reset`, to return to the set as it was first delivered. Takes the set's `generation` id; a setting left out keeps its current value. The set is cut again from its full-resolution source and its download is replaced in place, so the same URL serves the new delivery. What the pictures show cannot be edited.
+Change how an existing set (an image, character, illustration or concept set, or logo variations) is delivered, without generating again. On every set but an illustration set: `width` and `height` (both, one, or neither, as on the set tools), `canvas` (with no size fixed: `uniform` for one canvas across the set, `subject` to wrap each image around its own subject), `minimumMargin`, `sizing` (relative or fill), `format`, `quality` and `maxKB` (a file size limit, webp only), and for a set drawn with its own transparency (a character set, concept set or logo variations) or a transparent image set `background` (a `#RRGGBB` color to compose over, or `"transparent"`). On an illustration set: `width` and `height` together, as one of the batch's own sizes (the size its scenes were drawn at, or an exact half, quarter and so on of it, down to 256 pixels on the shorter side), `format` and `quality`. Or `reset`, to return to the set as it was first delivered. Takes the set's `generation` id; a setting left out keeps its current value. The set is cut again from its full-resolution source and its download is replaced in place, so the same URL serves the new delivery. What the pictures show cannot be edited.
 
 <br>
 
 ### `export_set` · free
 
-Export an existing set for the web, iOS, Android and Flutter at the base size `baseSize` you name: every image at every density each platform needs, laid out as each expects, with a viewer and a ledger that says per tree whether any file has some blur. An image or character set exports as icons, at base sizes from 16 to 256; an illustration set exports its scenes whole, up to its `crispBaseSize` (a quarter of the longest side its scenes were drawn at), so it is always crisp. One batch and one size per call; `format` and `quality` default to the set's current ones. Every example image on this page came from it.
+Export an existing set for the web, iOS, Android and Flutter at the base size `baseSize` you name: every image at every density each platform needs, laid out as each expects, with a viewer and a ledger that says per tree whether any file has some blur. Every set but an illustration set exports as icons, at base sizes from 16 to 256; an illustration set exports its scenes whole, up to its `crispBaseSize` (a quarter of the longest side its scenes were drawn at), so it is always crisp. One batch and one size per call; `format` and `quality` default to the set's current ones. Every example image on this page came from it.
 
 <br>
 
@@ -285,7 +351,8 @@ Create an upload slot for a reference image: you get back a ref_
 token and a one-line curl upload command. Pass the token to whichever
 tool takes reference images: `styleReferences` on `generate_image_set`
 and `generate_illustration_set`, `characterReferences` on
-`generate_character_set`, up to 3 each. To use an image from one of
+`generate_character_set`, `logo` on `generate_logo_variations`, up to
+3 each. To use an image from one of
 your own recent generations, skip the upload: pass `sourceGeneration`
 and `sourceImage` and the server copies that image in. To grow an
 existing set, use its extend tool instead.
