@@ -252,7 +252,7 @@ A set of different concepts from one brief, each its own idea in its own style, 
     <th colspan="4" align="left">Your agent asks for</th>
   </tr>
   <tr>
-    <td colspan="4"><samp><b>brief</b></samp><br>Logo ideas for Cactus Corner, a succulent shop. Lifelike plants with real texture and form: saguaro, barrel cactus, echeveria, aloe. Avoid cartoons, faces and novelty props. Earthy, grounded, refined.<br><br><samp><b>concepts</b></samp><br>left out, for the model to invent<br><br><samp><b>background</b></samp><br>#ffffff</td>
+    <td colspan="4"><samp><b>brief</b></samp><br>Logo ideas for Cactus Corner, a succulent shop. Lifelike plants with real texture and form: saguaro, barrel cactus, echeveria, aloe. Avoid cartoons, faces and novelty props. Earthy, grounded, refined.<br><br><samp><b>concepts</b></samp><br>optional; left out here, so the model invented 16<br><br><samp><b>background</b></samp><br>#ffffff</td>
   </tr>
   <tr>
     <th colspan="4" align="left">Your agent receives</th>
@@ -285,7 +285,7 @@ A set of one logo shown many ways, the logo recognizable in every image: restyle
     <th colspan="4" align="left">Your agent asks for</th>
   </tr>
   <tr>
-    <td colspan="4"><samp><b>logo</b></samp><br><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_04_cactus_and_agave_on_a_wooden_sign.png" alt="cactus and agave on a wooden sign" width="128"><br>the fourth concept above, filled from that set with <code>create_reference</code><br><br><samp><b>brief</b></samp><br>left out<br><br><samp><b>variations</b></samp><br>left out, for the model to invent<br><br><samp><b>background</b></samp><br>#ffffff</td>
+    <td colspan="4"><samp><b>logo</b></samp><br><img src="https://raw.githubusercontent.com/logospell/logospell-mcp-server/main/examples/cactus-corner-concepts/concept_04_cactus_and_agave_on_a_wooden_sign.png" alt="cactus and agave on a wooden sign" width="128"><br>the fourth concept above, filled from that set with <code>create_reference</code><br><br><samp><b>brief</b></samp><br>optional; left out here<br><br><samp><b>variations</b></samp><br>optional; left out here, so the model invented 16<br><br><samp><b>background</b></samp><br>#ffffff</td>
   </tr>
   <tr>
     <th colspan="4" align="left">Your agent receives</th>
