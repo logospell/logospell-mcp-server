@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets made to belong together" width="800">
+  <img src="assets/og-image-16x9.jpg" alt="Logospell: AI image sets made to match" width="800">
 </p>
 
 # Setup
