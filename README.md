@@ -214,7 +214,7 @@ A set of one character, such as a mascot, creature, person or single product, on
 
 ### `generate_illustration_set` · 1 credit
 
-A set of composed illustrations in one style, such as scenes, hero images, banners, posters or portraits, one illustration per scene and up to 6 per call. You set the style (in words, with up to 3 reference images, or both), the scenes, the size (every illustration in a call shares one, from a fixed list of shapes running from 8:1 to 1:8), and the format and quality. Without style references, the first scene is drawn first and the rest are drawn to match it. A finished set can be grown with [`extend_illustration_set`](#extend_illustration_set--1-credit), at its size or another from the list, delivered again at another of its own sizes with [`edit_set`](#edit_set--free), or exported for apps and sites with [`export_set`](#export_set--free).
+A set of composed illustrations in one style, such as scenes, hero images, banners, posters or portraits, one illustration per scene and up to 6 per call. You set the style (in words, with up to 3 reference images, or both), the scenes, the size (every illustration in a call shares one, from a fixed list of shapes running from 8:1 to 1:8), and the format and quality. Without style references, the first scene is drawn first and the rest are drawn to match it. For scenes that share people and a place, such as a story or a before and after, set `sameScene`: the scenes are drawn in order, each from the first scene and the one before it, so everyone and everything that appears again looks the same. Write the first scene in full and each later scene as only what is different from the scene before it. A finished set can be grown with [`extend_illustration_set`](#extend_illustration_set--1-credit), at its size or another from the list, delivered again at another of its own sizes with [`edit_set`](#edit_set--free), or exported for apps and sites with [`export_set`](#export_set--free).
 
 <table>
   <tr>
@@ -325,7 +325,7 @@ Add more variations to a set made with `generate_character_set`, generated exact
 
 ### `extend_illustration_set` · 1 credit
 
-Add more scenes to a set made with `generate_illustration_set`, drawn exactly as the set was: the same style text and style references, and the format and quality of the batch you name, at its size or any other size the tool lists, so one set can hold a wide hero and tall posters. A set made from text alone is sent up to 3 images from its first batch, so the new scenes are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
+Add more scenes to a set made with `generate_illustration_set`, drawn exactly as the set was: the same style text and style references, and the format and quality of the batch you name, at its size or any other size the tool lists, so one set can hold a wide hero and tall posters. A set made from text alone is sent up to 3 images from its first batch, so the new scenes are drawn like the rest. A set made with `sameScene` carries on from its first scene and its last, so write each new scene as only what is different from the scene before it. The new batch joins the set, and the whole set's download window restarts.
 
 <br>
 
