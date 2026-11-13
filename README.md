@@ -69,7 +69,7 @@ Gemini CLI asks for your API key when it installs the extension.
 
 ### `generate_image_set` · 1 credit
 
-A cohesive set of separate subjects in one style, such as icons, game assets or UI elements, on one solid background color or transparent (`background: "transparent"`), so each image drops onto any backdrop. You set the style (in words, with up to 3 reference images, or both), up to 16 subjects, the background, an exact size or native resolution, how each subject fills its frame, the margin, the format and quality (and, for webp, a file size limit), and each file's name. A finished set can be grown with [`extend_image_set`](#extend_image_set--1-credit), delivered again with [`edit_set`](#edit_set--free), or exported for the web, iOS, Android and Flutter with [`export_set`](#export_set--free).
+A cohesive set of separate subjects in one style, such as icons, game assets or UI elements, on one solid background color or transparent (`background: "transparent"`), so each image drops onto any backdrop. You set the style (in words, with up to 3 reference images, or both), up to 16 subjects, the background, an exact size (each side from 256 pixels up to a maximum set by the subject count: 1800 with 1, 700 with 2 to 4, 600 with 5 to 9, 512 with 10 or more) or native resolution, how each subject fills its frame, the margin, the format and quality (and, for webp, a file size limit), and each file's name. A finished set can be grown with [`extend_image_set`](#extend_image_set--1-credit), delivered again with [`edit_set`](#edit_set--free), or exported for the web, iOS, Android and Flutter with [`export_set`](#export_set--free).
 
 **With a transparent background**
 
@@ -313,13 +313,13 @@ A set of one logo shown many ways, the logo recognizable in every image: restyle
 
 ### `extend_image_set` · 1 credit
 
-Add more subjects to a set made with `generate_image_set`, generated exactly as the set was: the same style text and style references, and the background (a color or transparent), size, format, quality, margin, sizing and file size limit of the batch you name, so a set grows past the 16-subject limit of one call without drifting. A set styled by text alone is sent up to 3 images from its first batch, so the new subjects are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
+Add more subjects to a set made with `generate_image_set`, generated exactly as the set was: the same style text and style references, and the background (a color or transparent), size, format, quality, margin, sizing and file size limit of the batch you name, so a set grows past the 16-subject limit of one call without drifting. A batch fixed at a width or height above 512 takes fewer per call, since the new batch takes that size: up to 9 at 600 or less, up to 4 at 700 or less, and 1 above that. A set styled by text alone is sent up to 3 images from its first batch, so the new subjects are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
 
 <br>
 
 ### `extend_character_set` · 1 credit
 
-Add more variations to a set made with `generate_character_set`, generated exactly as the set was: the same character text and character references, and the background (a color or transparent), size, format, quality, margin, sizing and file size limit of the batch you name, so a set grows past the 16-variation limit of one call. A set made from text alone is sent up to 3 images from its first batch, so the new variations are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
+Add more variations to a set made with `generate_character_set`, generated exactly as the set was: the same character text and character references, and the background (a color or transparent), size, format, quality, margin, sizing and file size limit of the batch you name, so a set grows past the 16-variation limit of one call. A batch fixed at a width or height above 512 takes fewer per call, since the new batch takes that size: up to 9 at 600 or less, up to 4 at 700 or less, and 1 above that. A set made from text alone is sent up to 3 images from its first batch, so the new variations are drawn like the rest. The new batch joins the set, and the whole set's download window restarts.
 
 <br>
 

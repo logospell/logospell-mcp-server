@@ -1,7 +1,7 @@
 {
   "name": "logospell",
   "displayName": "Logospell",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "description": "AI image generation for your agent: image, character, illustration and concept sets, and logo variations, from text and reference images; all but illustration sets on a solid color or transparent. Every set can be edited or exported for the web, iOS, Android and Flutter.",
   "author": {
     "name": "Logospell",
